@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Find the major version of OS X
+# EXAMPLE: 10.10 or 10.9
+
+MAJOR_MAC_VERSION=$(sw_vers -productVersion | awk -F '.' '{print $1 "." $2}')
