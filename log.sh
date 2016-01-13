@@ -7,7 +7,7 @@ log="name.log"
 touch /var/log/"${log}"
 
 # Pipe all output to log
-exec 2>&1 > >(tee /var/log/"${log}")
+exec >> /var/log/"${log}"
 
 # Log function
 # Call this function the same way you would use echo
